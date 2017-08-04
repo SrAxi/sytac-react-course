@@ -1,0 +1,136 @@
+.App {
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 23%;
+    padding: 20px;
+    color: white;
+}
+
+.App-content {
+    font-size: large;
+    height: 77%;
+}
+
+.App-signout {
+    height: 12%;
+}
+
+.App-signout-btn {
+    float: right;
+    margin-top: 20px !important;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.login {
+    margin: 100px auto;
+    width: 500px;
+}
+
+.login button {
+    border: 1px solid #ddd;
+    font-size: 18px;
+    background-color: #f3f3f3;
+    padding: 10px;
+    margin: 10px;
+}
+
+.chat {
+    height: 88%;
+    text-align: left;
+}
+
+.chat header {
+    position: fixed;
+    height: 40px;
+    padding: 10px;
+    background: white;
+    width: 100%;
+    border-bottom: solid 1px #ddd;
+    display: flex;
+    flex-direction: row;
+}
+
+.chat header h1 {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.chat main {
+    padding-top: 20px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.chat section {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.chat input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.chat aside {
+    width: 200px;
+}
+
+.messages {
+    padding: 15px;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0;
+}
+
+.message span {
+    font-weight: bold;
+}
+
+.message small {
+    font-size: 10px;
+    color: #999;
+    font-weight: normal;
+}
+
+.users {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+}
+
+.users li.online:before {
+    content: "• ";
+    color: green;
+}
+
+.users li.offline {
+    color: grey;
+}
+
+.users li.offline:before {
+    content: "• ";
+}
+

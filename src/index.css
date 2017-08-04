@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+    font-family: helvetica, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+#root {
+    height: 100%;
+}
